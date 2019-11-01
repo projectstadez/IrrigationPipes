@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.irrigationblog.irrigationpipes.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_pipeNavigation"
+            app:destination="@id/pipeNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.irrigationblog.irrigationpipes.ui.notification.NotificationFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notications" >
+        <action
+            android:id="@+id/action_nav_notification_to_pipeNavigation"
+            app:destination="@id/pipeNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.irrigationblog.irrigationpipes.ui.report.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_nav_report_to_pipeNavigation"
+            app:destination="@id/pipeNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_status"
+        android:name="com.irrigationblog.irrigationpipes.ui.status.StatusFragment"
+        android:label="@string/menu_status"
+        tools:layout="@layout/fragment_status" >
+        <action
+            android:id="@+id/action_nav_status_to_pipeNavigation"
+            app:destination="@id/pipeNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.irrigationblog.irrigationpipes.ui.alarm.AlarmFragment"
+        android:label="@string/menu_alarm"
+        tools:layout="@layout/fragment_alarm" >
+        <action
+            android:id="@+id/action_nav_alarm_to_pipeNavigation"
+            app:destination="@id/pipeNavigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.irrigationblog.irrigationpipes.ui.user.UserFragment"
+        android:label="@string/menu_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_nav_user_to_pipeNavigation"
+            app:destination="@id/pipeNavigation" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.irrigationblog.irrigationpipes.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/signUp"
+        android:name="com.irrigationblog.irrigationpipes.SignUp"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+    <activity
+        android:id="@+id/pipeNavigation"
+        android:name="com.irrigationblog.irrigationpipes.PipeNavigation"
+        android:label="activity_pipe_navigation"
+        tools:layout="@layout/activity_pipe_navigation" />
+</navigation>
